@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hearder</title>
+    <script src="https://kit.fontawesome.com/10dfeb6bc7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="hearder.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="header">
+            <div class="logo">
+                <a href="#header"><img src="/img/Beach_29-removebg-preview.png" alt=""></a>
+            </div>
+            <div class="menu">
+                <div class="icon">
+                    <i class="fa-solid fa-bars fa-2x" style="color: #1e5eff;"></i>
+                </div>
+                <ul id="menuID">
+                    <li><a href=""><i class="fa-solid fa-house" style="color: #090a0b;"></i> Home</a></li>
+                    <li><a href="">East <i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="triangle-East">
+
+                        </div>
+                        <div class="menu-East">
+                            <ul>
+                                <li><a href="">Bãi Trước và Bãi Sau</a></li>
+                                <li><a href="">Bãi Tràng</a></li>
+                                <li><a href="">Bãi Dài, Bãi Biển Mỹ Khê</a></li>
+                                <li><a href="">Bãi Ngọc Vừng</a></li>
+                                <li><a href="">Bãi Đá Ông Địa</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="">North <i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="triangle-North">
+
+                        </div>
+                        <div class="menu-North">
+                            <ul>
+                                <li><a href="">Bãi Biển Cửa Đô</a></li>
+                                <li><a href="">Bãi Biển Vân Đồn</a></li>
+                                <li><a href="">Bãi Biển Cô Tô</a></li>
+                                <li><a href="">Bãi Biển Cẩm Phả</a></li>
+                                <li><a href="">Bãi Biển Đồ Sơn</a></li>
+                                <li><a href="">Bãi tắm biển Cát Cò cát Bà</a></li>
+                                <li><a href="">Bãi biển Bãi Cháy</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="">West <i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="triangle-West">
+
+                        </div>
+                        <div class="menu-West">
+                            <ul>
+                                <li><a href="">Bãi Biển Cà Mau</a></li>
+                                <li><a href="">Biển Cần Giuộc</a></li>
+                                <li><a href="">Biển Cần Giờ</a></li>
+                                <li><a href="">Vịnh Cần Giờ</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="">South <i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="triangle-South">
+
+                        </div>
+                        <div class="menu-South">
+                            <ul>
+                                <li><a href="">Bãi Biển Sau</a></li>
+                                <li><a href="">Bãi Biển Dứa</a></li>
+                                <li><a href="">Bãi Biển Trường</a></li>
+                                <li><a href="">Bãi Biển Cái Dăm</a></li>
+                                <li><a href="">Bãi Sao</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" id="search" placeholder="Tìm kiếm....">
+                <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+            </div>
+            <div class="About" id="aboutMe">
+                <a href="#contact">About Me &ensp; <i class="fa-solid fa-user" style="color: #000000;"></i></a>
+            </div>
+        </div>
+        <div class="slideshow">
+            <div class="slideshow-image" style="background-image: url('/img/vung-tau-ve-dem.webp')"></div>
+            <div class="slideshow-image" style="background-image: url('/img/Bien2.jpg')"></div>
+            <div class="slideshow-image" style="background-image: url('/img/Bien3.jpg')"></div>
+            <div class="slideshow-image" style="background-image: url('/img/my-khe\ \(1\).jpg (1).jpg')"></div>
+        </div>
+    </header>
+</body>
+<script>
+    $(document).ready(function(){
+        $('.icon').click(function(){
+            $('#menuID').slideToggle();
+        });
+    });
+</script>
+</html>
